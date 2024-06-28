@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+  
+body{
+    background: url(https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/8/2022/10/CLI371.weather.double_rainbow_cammie_czuchnicki-920x614.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    color: black;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.card{
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(145deg, #00000088, hsla(39, 79%, 49%, 0.936));
+    color: #fff;
+    margin: 100px auto 0;
+    border: none;
+    border-radius: 25px;
+    padding: 40px 35px;
+    text-align: center;
+    box-sizing: border-box;
+    
+}
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom:20px;
+}
+.search input{
+    border: 0;
+    outline:0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+.search button{
+    border: 0;
+    outline:0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor:pointer;
+}
+.search button img{
+    width:16px;
+}
+
+
+.weather-icon {
+    width: 170px;
+    margin-top: 30px;
+    border-radius: 50%;
+}
+
+.temp {
+    font-size: 2em;
+    margin: 0;
+}
+
+.city {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.detail {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.col {
+    text-align: center;
+}
+
+.col img {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+.humidity, .wind {
+    font-size: 30px;
+    margin: 5px 0 0;
+}
+
+.error{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .card {
+        padding: 20px;
+    }
+
+    .search input {
+        font-size: 16px;
+        padding: 8px 20px;
+        height: 50px;
+    }
+
+    .search button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .search button img {
+        width: 14px;
+    }
+
+    .weather-icon {
+        width: 150px;
+    }
+
+    .temp {
+        font-size: 1.8em;
+    }
+
+    .city {
+        font-size: 1.4em;
+    }
+
+    .col img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .humidity, .wind {
+        font-size: 25px;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 600px) {
+    .card {
+        padding: 15px;
+    }
+
+    .search input {
+        font-size: 14px;
+        padding: 6px 15px;
+        height: 40px;
+    }
+
+    .search button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .search button img {
+        width: 12px;
+    }
+
+    .weather-icon {
+        width: 120px;
+    }
+
+    .temp {
+        font-size: 1.5em;
+    }
+
+    .city {
+        font-size: 1.2em;
+    }
+
+    .col img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .humidity, .wind {
+        font-size: 20px;
+    }
+}
+
+/* For very small devices */
+@media (max-width: 400px) {
+    .card {
+        padding: 10px;
+    }
+
+    .search input {
+        font-size: 12px;
+        padding: 4px 10px;
+        height: 30px;
+    }
+
+    .search button {
+        width: 30px;
+        height: 30px;
+    }
+
+    .search button img {
+        width: 10px;
+    }
+
+    .weather-icon {
+        width: 100px;
+    }
+
+    .temp {
+        font-size: 1.2em;
+    }
+
+    .city {
+        font-size: 1em;
+    }
+
+    .col img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .humidity, .wind {
+        font-size: 15px;
+    }
+}
